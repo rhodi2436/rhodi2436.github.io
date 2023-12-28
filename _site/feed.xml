@@ -1,0 +1,81 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://rhodi2436.github.io/</id>
+  <title>Rhodi's blog</title>
+  <subtitle>随便记录生活。</subtitle>
+  <updated>2023-12-28T16:09:35+08:00</updated>
+  <author>
+    <name>Rhodi w</name>
+    <uri>https://rhodi2436.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://rhodi2436.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://rhodi2436.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2023 Rhodi w </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>About Webpack</title>
+    <link href="https://rhodi2436.github.io/posts/About-Webpack/" rel="alternate" type="text/html" title="About Webpack" />
+    <published>2023-12-28T15:51:11+08:00</published>
+  
+    <updated>2023-12-28T15:51:11+08:00</updated>
+  
+    <id>https://rhodi2436.github.io/posts/About-Webpack/</id>
+    <content src="https://rhodi2436.github.io/posts/About-Webpack/" />
+    <author>
+      <name>Rhodi w</name>
+    </author>
+
+  
+    
+    <category term="Web" />
+    
+    <category term="Front" />
+    
+    <category term="Tools" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Webpack
+
+
+  从原初开始, 重走时代的路程.
+
+
+webpack 是一个纯粹的 静态模块打包工具
+
+概念
+
+webpack 会从 一个 或 多个 入口构建 依赖图, 并将项目中的模块打包成一个或多个 bundles.
+
+
+  
+    入口起点: 用来指示 webpack 使用哪个模块, 作为构造 依赖图 的起点. 默认值是 ./src/index.js , 可以在配置文件中配置 entry 属性, 指定多个入口点.
+  
+  
+    输出: 用来指示如何创建输出的 bundle, 包括如何命名, 如何划分. 默认值是 ./dist/main.js , 可以在配置文件中配置 output.
+  
+  
+    Loader: 要进行有效的打包, 就必须让 webpack 理解所有的静态资源. webpack 本身可以理解 js 和 json 文件, 但对其他格式无法正确处...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
