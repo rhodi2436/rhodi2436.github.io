@@ -20,3 +20,6 @@ package-lock.json
 
 # Misc
 assets/js/dist
+
+# MacOS's Shit
+.DS_Store
