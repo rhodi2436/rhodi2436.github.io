@@ -5,8 +5,6 @@ categories: [Web, Front, Tools]
 tags: [Webpack, Writing]     # TAG names should always be lowercase
 ---
 
-# Webpack
-
 > 从原初开始, 重走时代的路程.
 
 webpack 是一个纯粹的 **静态模块打包工具** 
