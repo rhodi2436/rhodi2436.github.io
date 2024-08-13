@@ -19,13 +19,13 @@ tags: [maui, xaml, mvvm]     # TAG names should always be lowercase
 
 官方文档中的示例，大多使用这种方式。
 
-```xaml
+```xml
 <ContentPage.BindingContext>
 	<local:ApplicationViewModel Info="Information" />
 </ContentPage.BindingContext>
 ```
 
-```C#
+```c#
 public MyContentPage() {
   InitailizeComponent();
   
@@ -51,7 +51,7 @@ public MyContentPage() {
 
 自动依赖项解析，需要使用Shell来管理页面路由。当Shell创建新的页面对象时，会检查页面对象的构造函数参数，并从DI容器中找到依赖项并注入页面。
 
-```C#
+```c#
 // 在 MauiProgram.cs 中 注册ViewModel
 builder.Services.AddSinglton<ApplicationViewModel>();
 // HomePage 页面必须在Shell中注册路由 AppShell.xaml.cs
@@ -83,7 +83,7 @@ public partial HomePage:ContentPage{
 
 访问到以来容器。
 
-```C#
+```c#
 // LoginPage
 public partial LoginPage:ContentPage{
   public LoginPage(){
