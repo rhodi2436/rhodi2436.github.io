@@ -1,7 +1,7 @@
 ---
 title: Ref与Reactive的区别
 date: 2024-6-14 13:20:11 +0800
-categories: [Vue]
+categories: [vue]
 tags: [vue, ref, reactive]     # TAG names should always be lowercase
 ---
 
