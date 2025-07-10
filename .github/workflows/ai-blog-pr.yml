@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - '_content/drafts/**.md'
+      
+  workflow_dispatch:
 
 jobs:
   build-and-create-pr:
