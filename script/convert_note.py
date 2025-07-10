@@ -7,6 +7,7 @@ from openai import OpenAI
 client = OpenAI()
 
 DRAFTS_DIR = "_content/drafts"
+ARCHIVE_DIR = "_content/archive"
 POSTS_DIR = "_posts"
 
 def call_openai(prompt_text):
@@ -37,6 +38,13 @@ def slugify(text):
     text = re.sub(r"[^\w\u4e00-\u9fff-]+", "-", text.strip())  # 保留中英文、数字、下划线、连字符
     return re.sub(r"[-]+", "-", text).strip("-")
 
+def archive_draft(original_path):
+    os.makedirs(ARCHIVE_DIR, exist_ok=True)
+    filename = os.path.basename(original_path)
+    archive_path = os.path.join(ARCHIVE_DIR, filename)
+    shutil.move(original_path, archive_path)
+    print(f"📦 草稿已归档：{archive_path}")
+
 def process_drafts():
     os.makedirs(POSTS_DIR, exist_ok=True)
     drafts = glob.glob(f"{DRAFTS_DIR}/*.md")
@@ -60,6 +68,7 @@ def process_drafts():
             f.write(result)
 
         print(f"✅ 已生成：{output_path}")
+        archive_draft(path)
 
 if __name__ == "__main__":
     process_drafts()
