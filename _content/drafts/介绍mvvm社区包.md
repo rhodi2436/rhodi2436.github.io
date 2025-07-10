@@ -1,10 +1,10 @@
 介绍CommunityToolkit.Mvvm的源生成
 
-# WPF 本身具有 Mvvm 架构的所有基础设施。Mvvm 包只是简化这一过程。
+WPF 本身具有 Mvvm 架构的所有基础设施。Mvvm 包只是简化这一过程。
 
-# Mvvm包之所以可以跨UI框架（Blazor Maui WPF winUI），原因是，这些UI框架在设计之初就保持了API的一致性。
+Mvvm包之所以可以跨UI框架（Blazor Maui WPF winUI），原因是，这些UI框架在设计之初就保持了API的一致性。
 
-# 正因为UI框架已经有了mvvm实现的所有基础设施，因此，Mvvm包的 Source Generator 特性，就是为了**简化**范式的编写。
+正因为UI框架已经有了mvvm实现的所有基础设施，因此，Mvvm包的 Source Generator 特性，就是为了**简化**范式的编写。
 	- ObservableProperty 用来生成可观察属性
 	- RelayCommand 用来生成命令
 INotifyPropertyChanged ObservableObject … 由于C#不支持多重继承，因此，这些特性可以让一些现有的子类添加可观察的组件。
