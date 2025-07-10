@@ -13,7 +13,7 @@ def call_openai(prompt_text):
     response = client.responses.create(
         prompt={
             "id": "pmpt_686f5b452dfc8196b0bd7ec522997c4b0d825a0ed93c110e",
-            "version": "2",
+            "version": "3",
         },
         input=prompt_text
     )
