@@ -3,7 +3,7 @@ name: AI Blog Post Generator & PR
 on:
   push:
     paths:
-      - 'content/drafts/**.md'
+      - '_content/drafts/**.md'
 
 jobs:
   build-and-create-pr:
