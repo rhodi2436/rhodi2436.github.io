@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - '_content/drafts/**.md'
-      
+
   workflow_dispatch:
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
         run: pip install openai
 
       - name: Run AI blog post generator
-        run: python scripts/convert_notes.py
+        run: python script/convert_note.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
