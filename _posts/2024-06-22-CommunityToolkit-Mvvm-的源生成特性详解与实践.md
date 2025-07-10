@@ -1,8 +1,8 @@
 ---
 title: CommunityToolkit.Mvvm 的源生成特性详解与实践
-date: 2024-06-22
-tags: [CommunityToolkit.Mvvm, Source Generator, MVVM, WPF, .NET, ObservableProperty, RelayCommand, ObservableObject, ObservableValidator, ObservableRecipient]
-categories: [前端开发, .NET]
+date: 2025-07-11
+tags: [CommunityToolkit.Mvvm, Source Generator, MVVM, WPF, .NET]
+categories: [.NET]
 ---
 
 # CommunityToolkit.Mvvm 的源生成特性详解与实践
