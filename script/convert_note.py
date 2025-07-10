@@ -6,8 +6,8 @@ from openai import OpenAI
 
 client = OpenAI()
 
-DRAFTS_DIR = "content/drafts"
-POSTS_DIR = "posts"
+DRAFTS_DIR = "_content/drafts"
+POSTS_DIR = "_posts"
 
 def call_openai(prompt_text):
     response = client.responses.create(
