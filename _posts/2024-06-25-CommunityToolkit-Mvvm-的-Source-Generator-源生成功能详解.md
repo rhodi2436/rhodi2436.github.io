@@ -1,6 +1,6 @@
 ---
 title: CommunityToolkit.Mvvm 的 Source Generator 源生成功能详解
-date: 2024-06-25
+date: 2025-07-11
 tags: [CommunityToolkit.Mvvm, Source Generator, MVVM, WPF, .NET, Blazor, MAUI, WinUI, 数据验证, 消息通信]
 categories: [开发框架, WPF, .NET]
 ---
