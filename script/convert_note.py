@@ -17,7 +17,7 @@ def call_openai(prompt_text):
         },
         input=prompt_text
     )
-    return response.choices[0].message.content.strip()
+    return response.output_text
 
 def extract_title_and_date(md_text):
     front_matter = re.search(r"---\s*\n(.*?)\n---", md_text, re.DOTALL)
