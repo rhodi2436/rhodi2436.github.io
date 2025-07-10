@@ -1,0 +1,37 @@
+name: AI Blog Post Generator & PR
+
+on:
+  push:
+    paths:
+      - 'content/drafts/**.md'
+
+jobs:
+  build-and-create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+
+      - name: Install dependencies
+        run: pip install openai
+
+      - name: Run AI blog post generator
+        run: python scripts/convert_notes.py
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "AI: 自动生成博客文章"
+          title: "AI 提交了一篇新博客，请审阅"
+          body: |
+            由 AI 自动生成的博客文章，请审阅后确认发布。
+          branch: ai/blog-${{ github.run_id }}
+          base: main
