@@ -1,7 +1,7 @@
 ---
 title: DbContext注意事项
 date: 2024-12-16 12:20:11 +0800
-categories: [dotnet]
+categories: [技术, DotNet]
 tags: [efcore, dotnet, c#]     # TAG names should always be lowercase
 ---
 

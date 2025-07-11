@@ -2,7 +2,7 @@
 title: CommunityToolkit.Mvvm 的源生成特性详解与实践
 date: 2025-07-11
 tags: [CommunityToolkit.Mvvm, Source Generator, MVVM, WPF, .NET]
-categories: [.NET]
+categories: [技术, DotNet]
 ---
 
 # CommunityToolkit.Mvvm 的源生成特性详解与实践

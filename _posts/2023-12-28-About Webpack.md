@@ -1,7 +1,7 @@
 ---
 title: About Webpack
 date: 2023-12-28 15:51:11 +0800
-categories: [build]
+categories: [技术, 前端]
 tags: [Webpack, Writing]     # TAG names should always be lowercase
 ---
 

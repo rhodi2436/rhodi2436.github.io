@@ -1,7 +1,7 @@
 ---
 title: MAUI 中的 MVVM
 date: 2024-8-13 14:20:11 +0800
-categories: [maui]
+categories: [技术, DotNet]
 tags: [maui, xaml, mvvm]     # TAG names should always be lowercase
 ---
 

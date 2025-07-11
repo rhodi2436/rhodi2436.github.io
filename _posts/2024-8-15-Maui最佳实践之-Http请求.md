@@ -1,7 +1,7 @@
 ---
 title: Maui最佳实践之 Http请求
 date: 2024-8-15 23:20:11 +0800
-categories: [maui]
+categories: [技术, DotNet]
 tags: [maui, xaml, c#]     # TAG names should always be lowercase
 ---
 
