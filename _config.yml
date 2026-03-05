@@ -109,6 +109,8 @@ assets:
 pwa:
   enabled: true # the option for PWA feature
 
+future: true
+
 paginate: 10
 
 # The base URL of your site
