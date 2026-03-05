@@ -23,3 +23,6 @@ assets/js/dist
 
 # MacOS's Shit
 .DS_Store
+
+# Copilot instructions
+.github/copilot-instructions.md
